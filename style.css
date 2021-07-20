@@ -1,0 +1,121 @@
+:root{
+    --orange:#F66F4F;
+    --black: #222120;
+    --white: #F7F4F2;
+    --black2: #282726;
+    --gray: #5F5B5A;
+}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page1{
+    height: 100vh;
+    background-color: white;
+    background-color: blue;
+
+}
+.page2{
+    height: 100vh;
+    background-color: var(--black);
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    margin: 0 40px;
+    position: fixed;
+    width: calc(100vw - 80px);
+
+}
+   h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--white);
+
+    /* position: absolute; */
+    /* width: 483px;
+    height: 640px;
+    left: -5px;
+    top: 166px; */
+
+
+    font-style: italic;
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: -0.01em;
+    /* margin: 200px 0; */
+   }
+   span,a{
+       color: var(--orange)
+   }
+
+    h1{
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        color: var(--black);
+
+
+        /* position: static;
+        width: 273px;
+        height: 76px;
+        left: 0px;
+        top: 0px; */
+
+        font-style: normal;
+        font-size: 28px;
+        line-height: 38px;
+
+        letter-spacing: -0.01em;
+
+        /* Inside Auto Layout */
+        /* 
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 0px 0px; */
+    }
+    a{
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-align: left;
+    }
+    ul{
+        list-style: none;
+    }
+
+    p{
+        /* position: absolute;
+        width: 263px;
+        height: 270px;
+        left: 40px;
+        top: 1034px; */
+
+        font-family: 'Libre Franklin', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+    .title2{
+        color: #282726;
+    }
+    .title1{
+        color: #282726;
+    }
