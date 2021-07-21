@@ -7,7 +7,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
       navBar.style.backgroundColor = "white";
-      navBar.style.transition = "2s linear 1s";
+      navBar.style.transition = "linear 1s";
 
 
   } else {
