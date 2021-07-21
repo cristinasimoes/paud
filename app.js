@@ -80,8 +80,8 @@ const [red, green, blue] = [255, 255, 255]
 
  
     window.addEventListener('scroll', () => {
-        const y = 1 + (window.scrollY || window.pageYOffset) / 140
-            const [r, g, b] = [red/y, (green/y)-1, (blue/y)-2].map(Math.round)
+      const y = 1 + (window.scrollY || window.pageYOffset) / 106
+      const [r, g, b] = [red/y, (green/y)-1, (blue/y)-2].map(Math.round)
             section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
             console.log(section1.style.backgroundColor);
 
