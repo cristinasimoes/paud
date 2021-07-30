@@ -1,6 +1,6 @@
 :root{
     --orange:#F66F4F;
-    --black: rgb(34, 33, 32);
+    --black: #222120;
     --white: #F7F4F2;
     /* --white:blue; */
 
@@ -261,7 +261,7 @@ flex-direction: column;
 }
     .background-text1 {
 
-width: 306px;
+width: 334px;
 }
 }
 @media screen and (min-width: 569px) {
