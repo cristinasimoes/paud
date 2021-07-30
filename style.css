@@ -253,6 +253,8 @@ flex-direction: column;
 }
 .phone-section{
     display: flex;
+    height: 1379px;
+
 }
 @media screen and (min-width: 320px) {
 .section2 h2{
@@ -274,6 +276,7 @@ padding-right: 93px;
 }
 .tablet-section{
     display: flex;
+    height: 1703px;
 }
 .phone-section{
     display: none;
