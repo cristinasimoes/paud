@@ -15,6 +15,11 @@ body{
     box-sizing: border-box;        
 }
 
+.desktop-section{
+    display: none;
+}
+
+
         body{
             margin: 0;
             padding: 0;
@@ -39,7 +44,7 @@ nav{
 /* background-color: white; */
 
 }
-.background-text1 h2{
+.background-text1{
     opacity: 0;
 }
 .background-text1 span{
@@ -89,9 +94,9 @@ color: white;
 }
 .section1{
     /* background-color: white; */
-    height: 130vh;   
+    height: 100vh;   
     position: relative;
-    display: flex;
+    display: flex; 
 justify-content: center;
 
 }
@@ -165,9 +170,6 @@ position: absolute;
 bottom: 61px;
 right: 0;
 }
-
-
-
 
 
 .background-text1 :first-child{
@@ -246,6 +248,9 @@ flex-direction: column;
 .tablet-section{
     display: none;
 }
+.desktop-section{
+    display: none;
+}
 .phone-section{
     display: flex;
 }
@@ -253,11 +258,7 @@ flex-direction: column;
 .section2 h2{
     margin-right: 40px;
     width: 278px;
-
-
 }
-
-
     .background-text1 {
 
 width: 306px;
@@ -275,6 +276,9 @@ padding-right: 93px;
     display: flex;
 }
 .phone-section{
+    display: none;
+}
+.desktop-section{
     display: none;
 }
 .section2 h2 {
@@ -321,9 +325,6 @@ line-height: 30px;
 }
 
 
-.desktop-section{
-    display: none;
-}
 
 
 @media screen and (min-width: 769px) {
@@ -349,6 +350,9 @@ line-height: 62px;
     display: flex;
 }
 .phone-section{
+    display: none;
+}
+.desktop-section{
     display: none;
 }
 .section1 h2{
@@ -395,6 +399,8 @@ line-height: 30px;
 
 
 }
+
+
 }
 
 
@@ -500,7 +506,13 @@ display: block;
 .nav-right a:first-child,    .nav-right a:nth-child(2){
 display: none;
 }
+.section1{
+    /* background-color: white; */
+    height: 170vh;   
+    position: relative;
+justify-content: center;
 
+}
 }
     
 @media screen and (min-width: 1223px) {
@@ -512,8 +524,23 @@ display: none;
     
     }
 
+
 }
 .clipboard{
     width: 139px;
     
     }
+
+
+
+
+
+
+      .content {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+     
+      }
+      
+  

@@ -18,7 +18,7 @@ function myFunction(id) {
   // gsap animation
 
 // animation portrait opacity
-gsap.to(".background-text1 h2", {
+gsap.to(".background-text1", {
   scrollTrigger: {
     trigger: ".section1",
 
@@ -50,24 +50,20 @@ gsap.to("nav", {
   duration:3, 
 });
 
+// gsap.to('.background-text1'),{
+//   scrollTrigger:{
+//     start: "top 130%",
+//     end: "top 40%",
+//     markers: " true",
+//     scrub:2,
+//     x: 200,
+//     duration: 3,
+//   }
+// }
 
-gsap.to(".background-text1 h2", {
-  scrollTrigger: {
-    trigger: ".section2",
-    start: "top 130%",
-    end: "top 40%",
-    markers:false,
-    // scroller: "#scrollWrapper",
-    scrub:1,
-  },
-  y:'300px',
-  x:'0',
-  duration: 1,
 
-  // opacity:1,
-  // delay: 1,
-  // duration:1, 
-});
+
+// });
 //scroll animation background color change
 const [red, green, blue] = [255, 255, 255]
     const section1 = document.querySelector('.body-bg')
@@ -105,3 +101,4 @@ window.addEventListener('scroll', () => {
  
 })
 
+var rellax = new Rellax('.rellax');
