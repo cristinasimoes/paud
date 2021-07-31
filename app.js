@@ -47,7 +47,7 @@ gsap.to(".background-text1", {
     toggleActions: "restart none reverse reverse",
     start:'top 80%',
     end: 'bottom 70%',
-    markers:true,
+    markers:false,
   },
   y: "-420px",
   ease: "Power1.easeInOut",
