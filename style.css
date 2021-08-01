@@ -2,53 +2,37 @@
     --orange:#F66F4F;
     --black: #222120;
     --white: #F7F4F2;
-    /* --white:blue; */
-
     --black2: #282726;
     --gray: #5F5B5A;
 }
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;        
+    box-sizing: border-box;   
+    background-color: rgb(255, 255, 255);
+    /* hide scrollbar but allow scrolling */
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;      
+}
+body::-webkit-scrollbar {
+display: none; /* for Chrome, Safari, and Opera */
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
 }
 
-.desktop-section{
-    display: none;
-}
-
-
-        body{
-            margin: 0;
-            padding: 0;
-            background-color: rgb(255, 255, 255);
-            /* hide scrollbar but allow scrolling */
-            -ms-overflow-style: none; /* for Internet Explorer, Edge */
-            scrollbar-width: none; /* for Firefox */
-            overflow-y: scroll; 
-        }
-
-        body::-webkit-scrollbar {
-        display: none; /* for Chrome, Safari, and Opera */
-        }
-
-       
+/* nav bar */
 nav{
     position: fixed;
     padding: 27px 40px 48px 40px;
     width: calc(100vw - 80px);
     z-index: 1;
     height: 10px;
-}
-.background-text1{
-    opacity: 0;
-}
-.background-text1 span{
-    opacity: 0;
-}
-nav{
     opacity: 0;
 }
 nav ul{
@@ -62,49 +46,42 @@ nav ul{
 .nav-name{
     width: 30px;
 }
-span,a{
-color: var(--orange)
-}
 .nav-right a:last-child,    .nav-right a:nth-child(3){
-display: none;
-}
+    display: none;
+    }
 .nav-right a:first-child,    .nav-right a:nth-child(2){
-display: block;
+    display: block;
 }
 .nav-right{
     display: flex;
 }
-
-
-a{
-font-family: 'Libre Franklin', sans-serif;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 18px;
-letter-spacing: 0.1em;
-text-align: left;
-text-decoration: none;
-
+nav img{
+    width: 25px;
+    padding-left: 10px;
 }
-p a{
-color: white;
+
+/* section 1 */
+.tablet-section{
+    display: none;
 }
+.desktop-section{
+    display: none;
+}
+.phone-section{
+    display: flex;
+    height: 100vh;
+}
+
+.background-text1, .background-text1 span{
+    opacity: 0;
+}
+
 .section1{
     height: 100vh;   
     position: relative;
-    display: flex; 
     justify-content: center;
 }
-.section2{
-    height: 100vh;
-    position: relative;
-}
-.background-text1{
-    position: absolute;
-    top: 23vh;
-    width: 100vw;
-}
+
 .section1 h2{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -116,6 +93,10 @@ color: white;
     margin: 0;
     line-height: 50px;
 }
+.block{
+    display: flex;
+    align-items: center;
+}
 .block h2{
     justify-content: center;
     align-items: center;
@@ -124,35 +105,16 @@ color: white;
 .block h1{
     margin-top: 0;
     margin-bottom: 0;
+    text-align: left!important;
+
 }
-.background-text2{
-    margin-top: 21vh;
-}
-p{
-    font-family: 'Libre Franklin', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 23px;
-    letter-spacing: 0.01em;
-    color: white;
-    margin-left: 40px;
-    width: 60vw;
-}
-.section2 h2{
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    color: var(--white);
-    font-style: italic;
-    font-size: 47px;
-    letter-spacing: -0.01em;
-    z-index: 0;
-    margin: 0;
-    line-height: 50px;
+
+.background-text1{
     position: absolute;
-    bottom: 61px;
-    right: 0;
+    top: 23vh;
+    width: 100vw;
 }
+
 .background-text1 :first-child{
     text-align: center;
     padding-right: 36px;
@@ -181,13 +143,6 @@ p{
     text-align: right;
     padding-right: 19px;
 }
-.block{
-    display: flex;
-    align-items: center;
-}
-.block h1{
-    text-align: left!important;
-}
 h1{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -197,10 +152,60 @@ h1{
     letter-spacing: -0.01em;
     margin-left: 34px;
 }
-nav img{
-    width: 25px;
-    padding-left: 10px;
+
+/* section 2 */
+span,a{
+    color: var(--orange)
 }
+
+a{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-decoration: none;
+}
+p a{
+    color: white;
+}
+
+.section2{
+    height: 100vh;
+    position: relative;
+}
+
+.background-text2{
+    margin-top: 21vh;
+}
+p{
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: white;
+    margin-left: 40px;
+    width: 60vw;
+}
+.section2 h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--white);
+    font-style: italic;
+    font-size: 47px;
+    letter-spacing: -0.01em;
+    z-index: 0;
+    margin: 0;
+    line-height: 50px;
+    position: absolute;
+    bottom: 61px;
+    right: 0;
+}
+
 .section2 h2{
     color: #282726;
     margin-right: 20px;
@@ -208,29 +213,11 @@ nav img{
     font-size: 67px;
     line-height: 64px;
 }  
-.wrapper{
-    display: flex;
-    flex-direction: column;
-}
-.tablet-section{
-    display: none;
-}
-.desktop-section{
-    display: none;
-}
-.phone-section{
-    display: flex;
-    /* height: 1379px; */
-    height: 100vh;
-}
+
 .clipboard{
     width: 139px;
 }
-.content {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-}
+
 @media screen and (min-width: 320px) {
     .section2 h2{
         margin-right: 40px;
@@ -250,7 +237,6 @@ nav img{
     }
     .tablet-section{
         display: flex;
-        /* height: 1703px; */
         height: 120vh;
     }
     .phone-section{
